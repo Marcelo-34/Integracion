@@ -1,0 +1,113 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/facturass.css'%}">
+
+
+<body>
+        <h1>Control de Facturas</h1>
+</head>
+<body>
+    <script>
+        // Función para cargar el archivo JSON local
+        fetch('/static/app/json/data.json')
+            .then(response => response.json())
+            .then(data => {
+                const tbody = document.getElementById('factura-tbody');
+                data.facturas.forEach(factura => {
+                    const row = document.createElement('tr');
+                    
+                    row.innerHTML = `
+                        <td>${factura.cliente}</td>
+                        <td>${factura.numeroFactura}</td>
+                        <td>${factura.fechaFactura}</td>
+                        <td>${factura.montoFacturado}</td>
+                        <td>${factura.termino}</td>
+                        <td>${factura.fechaVencimiento}</td>
+                        <td>${factura.pago}</td>
+                        <td>${factura.estado}</td>
+                    `;
+                    
+                    tbody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error cargando el archivo JSON:', error));
+    </script>
+</body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Facturas</title>
+
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="header-cell">Cliente</th>
+                    <th class="header-cell">N° de Factura</th>
+                    <th class="header-cell">Fecha de Factura</th>
+                    <th class="header-cell">Monto Facturado</th>
+                    <th class="header-cell">Término (días)</th>
+                    <th class="header-cell">Fecha de Vencimiento</th>
+                    <th class="header-cell">¿Pago?</th>
+                    <th class="header-cell">Estado</th>
+                </tr>
+            </thead>
+            <tbody id="factura-tbody">
+                <!-- Aquí se añadirán las filas de la tabla dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Función para cargar el archivo JSON local
+        fetch('/static/myapp/data.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error al cargar el archivo JSON');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const tbody = document.getElementById('factura-tbody');
+                data.facturas.forEach(factura => {
+                    const row = document.createElement('tr');
+                    
+                    row.innerHTML = `
+                        <td>${factura.cliente}</td>
+                        <td>${factura.numeroFactura}</td>
+                        <td>${factura.fechaFactura}</td>
+                        <td>${factura.montoFacturado}</td>
+                        <td>${factura.termino}</td>
+                        <td>${factura.fechaVencimiento}</td>
+                        <td>${factura.pago}</td>
+                        <td>${factura.estado}</td>
+                    `;
+                    
+                    tbody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error cargando el archivo JSON:', error));
+    </script>
+</body>
+</html>
+
+
+{% endblock %}

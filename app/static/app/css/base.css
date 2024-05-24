@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EEEEEE;
+}
+
+header {
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+footer {
+    background-color: #393E46;
+    color: #EEEEEE;
+    text-align: center;
+    padding: 10px 0;
+}

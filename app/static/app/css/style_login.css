@@ -1,0 +1,16 @@
+.nose{
+  margin: 100px auto;
+  max-width: 400px;
+  padding: 30px;
+  background-color: rgba(235, 231, 231, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+.tu{
+    background-color:rgba(42, 67, 211, 0.893); ;
+  }
+
+.ti{
+  background-color:rgba(181, 133, 50, 0.893); 
+}

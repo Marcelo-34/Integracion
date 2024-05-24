@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EEEEEE;
+}
+
+header {
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #222831;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #222831;
+    background-color: #32E0C4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #26b3a5;
+}
+
+footer {
+    background-color: #393E46;
+    color: #EEEEEE;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    display: inline-block;
+    width: 500px; /* Puedes ajustar este tamaño según tus necesidades */
+    margin: 20px;
+    vertical-align: top;
+}
+
+.control-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4CAF50; /* Cambia el color según tus preferencias */
+    color: white;
+    border-radius: 4px;
+}
+
+.control-button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el cursor */
+}
