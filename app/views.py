@@ -1,10 +1,16 @@
 from django.shortcuts import render
+from .models import Facturas
 
 def home(request):
     return render(request, 'app/home.html')
 
 def facturas(request):
-    return render(request, 'app/facturas.html')
+    Factura = Facturas.objects.all()
+    data = {
+        'Factura': Factura
+    }
+
+    return render(request, 'app/facturas.html', data)
 
 def boletasVentasPosVentas(request):
     return render(request, 'app/boletasVentasPosVentas.html')
