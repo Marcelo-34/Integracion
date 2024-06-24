@@ -1,8 +1,12 @@
+# app/api/router.py
+
 from rest_framework.routers import DefaultRouter
-from app.api.views import FacturasApiViewSet
+from app.api.views import FacturasApiViewSet, BacturaApiViewSetactura
 
-router_app = DefaultRouter()
+router = DefaultRouter()
+router_app_B = DefaultRouter()
 
-router_app.register(prefix='Facturas', basename='Facturas', viewset=FacturasApiViewSet)
+router.register(prefix='Facturas', basename='Facturas', viewset=FacturasApiViewSet)
+router.register(prefix='Boleta', basename='Boleta', viewset=BacturaApiViewSetactura)
 
-urlpatterns = router_app.urls
+router_app = router

@@ -19,3 +19,15 @@ class Facturas(models.Model):
 
     def __str__(self):
         return str(self.ID_de_factura)
+    
+
+class Boleta(models.Model):
+    Numero_boleta   = models.CharField(max_length=100)
+    Fecha_emision   = models.DateField()
+    Cliente         = models.CharField(max_length=100)
+    Items_boleta    = models.TextField()
+    Total           = models.DecimalField(max_digits=10, decimal_places=2)
+    Estado          = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.Numero_boleta
