@@ -1,0 +1,55 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/facturass.css'%}">
+
+<body>
+    <h1>Control de Facturas</h1>
+    <div>
+
+        {% load humanize %}
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="header-cell">ID de factura</th>
+                    <th class="header-cell">Numero de factura</th>
+                    <th class="header-cell">Fecha de emision</th>
+                    <th class="header-cell">Cliente</th>
+                    <th class="header-cell">Items de factura</th>
+                    <th class="header-cell">Total</th>
+                    <th class="header-cell">Estado de la factura</th>
+                </tr>
+            </thead>
+            <tbody id="factura-tbody">
+                {% for p in Factura %}
+                <tr>
+                    <td>{{ p.ID_de_factura }}</td>
+                    <td>{{ p.Numero_de_factura }}</td>
+                    <td>{{ p.fecha_de_emicion }}</td>
+                    <td>{{ p.cliente }}</td>
+                    <td>{{ p.Items_de_factura }}</td>
+                    <td>${{ p.Total | intcomma }}</td>
+                    <td>{{ p.Estado_de_la_factua }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
+
+{% endblock %}

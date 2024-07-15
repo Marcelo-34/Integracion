@@ -1,0 +1,53 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/facturass.css'%}">
+
+<body>
+    <h1>Control de las boletas</h1>
+    <div>
+
+        {% load humanize %}
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="header-cell">Numero boleta</th>
+                    <th class="header-cell">Fecha de emision</th>
+                    <th class="header-cell">Cliente</th>
+                    <th class="header-cell">Items de boleta</th>
+                    <th class="header-cell">Total</th>
+                    <th class="header-cell">Estado de la boleta</th>
+                </tr>
+            </thead>
+            <tbody id="factura-tbody">
+                {% for p in boleta %}
+                <tr>
+                    <td>{{ p.Numero_boleta }}</td>
+                    <td>{{ p.Fecha_emision }}</td>
+                    <td>{{ p.Cliente }}</td>
+                    <td>{{ p.Items_boleta }}</td>
+                    <td>${{ p.Total | intcomma }}</td>
+                    <td>{{ p.Estado }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
+
+{% endblock %}

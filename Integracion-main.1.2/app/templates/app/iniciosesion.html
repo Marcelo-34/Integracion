@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static '/app/css/style_login.css' %}">
+    <title>Iniciar Sesión</title>
+</head>
+<body class="login-body">
+    <div class="container-login">
+        <h2>Iniciar Sesión</h2>
+        <form method="post" action="{% url 'iniciosesion' %}" class="loginxd">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

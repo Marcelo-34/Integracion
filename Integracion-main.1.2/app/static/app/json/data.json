@@ -1,0 +1,154 @@
+{
+    "facturas": [
+        {
+            "cliente": "Cliente A",
+            "numeroFactura": "123456",
+            "fechaFactura": "2024-05-23",
+            "montoFacturado": "$1000.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-06-22",
+            "pago": "No",
+            "estado": "Pendiente"
+        },
+        {
+            "cliente": "Cliente B",
+            "numeroFactura": "123457",
+            "fechaFactura": "2024-05-24",
+            "montoFacturado": "$2000.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-06-23",
+            "pago": "Sí",
+            "estado": "Pagado"
+        },
+        {
+            "cliente": "Cliente C",
+            "numeroFactura": "123458",
+            "fechaFactura": "2024-05-25",
+            "montoFacturado": "$1500.00",
+            "termino": 15,
+            "fechaVencimiento": "2024-06-09",
+            "pago": "No",
+            "estado": "Pendiente"
+        },
+        {
+            "cliente": "Cliente D",
+            "numeroFactura": "123459",
+            "fechaFactura": "2024-05-26",
+            "montoFacturado": "$2500.00",
+            "termino": 45,
+            "fechaVencimiento": "2024-07-10",
+            "pago": "Sí",
+            "estado": "Pagado"
+        },
+        {
+            "cliente": "Cliente E",
+            "numeroFactura": "123460",
+            "fechaFactura": "2024-05-27",
+            "montoFacturado": "$3000.00",
+            "termino": 60,
+            "fechaVencimiento": "2024-07-26",
+            "pago": "No",
+            "estado": "Pendiente"
+        },
+        {
+            "cliente": "Cliente F",
+            "numeroFactura": "123461",
+            "fechaFactura": "2024-05-28",
+            "montoFacturado": "$500.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-06-27",
+            "pago": "Sí",
+            "estado": "Pagado"
+        },
+        {
+            "cliente": "Cliente G",
+            "numeroFactura": "123462",
+            "fechaFactura": "2024-05-29",
+            "montoFacturado": "$1200.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-06-28",
+            "pago": "No",
+            "estado": "Pendiente"
+        },
+        {
+            "cliente": "Cliente H",
+            "numeroFactura": "123463",
+            "fechaFactura": "2024-05-30",
+            "montoFacturado": "$750.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-06-29",
+            "pago": "Sí",
+            "estado": "Pagado"
+        },
+        {
+            "cliente": "Cliente I",
+            "numeroFactura": "123464",
+            "fechaFactura": "2024-05-31",
+            "montoFacturado": "$900.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-06-30",
+            "pago": "No",
+            "estado": "Pendiente"
+        },
+        {
+            "cliente": "Cliente J",
+            "numeroFactura": "123465",
+            "fechaFactura": "2024-06-01",
+            "montoFacturado": "$1100.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-07-01",
+            "pago": "Sí",
+            "estado": "Pagado"
+        },
+        {
+            "cliente": "Cliente K",
+            "numeroFactura": "123466",
+            "fechaFactura": "2024-06-02",
+            "montoFacturado": "$2100.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-07-02",
+            "pago": "No",
+            "estado": "Pendiente"
+        },
+        {
+            "cliente": "Cliente L",
+            "numeroFactura": "123467",
+            "fechaFactura": "2024-06-03",
+            "montoFacturado": "$3200.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-07-03",
+            "pago": "Sí",
+            "estado": "Pagado"
+        },
+        {
+            "cliente": "Cliente M",
+            "numeroFactura": "123468",
+            "fechaFactura": "2024-06-04",
+            "montoFacturado": "$4500.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-07-04",
+            "pago": "No",
+            "estado": "Pendiente"
+        },
+        {
+            "cliente": "Cliente N",
+            "numeroFactura": "123469",
+            "fechaFactura": "2024-06-05",
+            "montoFacturado": "$2300.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-07-05",
+            "pago": "Sí",
+            "estado": "Pagado"
+        },
+        {
+            "cliente": "Cliente O",
+            "numeroFactura": "123470",
+            "fechaFactura": "2024-06-06",
+            "montoFacturado": "$3800.00",
+            "termino": 30,
+            "fechaVencimiento": "2024-07-06",
+            "pago": "No",
+            "estado": "Pendiente"
+        }
+    ]
+}

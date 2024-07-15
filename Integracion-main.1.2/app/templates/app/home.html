@@ -1,0 +1,33 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'app/css/home.css'%}">
+
+<div class="container">
+    <h1>Control de Contabilidad</h1>
+    <a class="button control-button" href="{% url 'contable' %}">Controlar Los movimientos contables</a>
+</div>
+
+<div class="container">
+    <a class="button control-button" href="{% url 'boletasVentasPosVentas' %}">Controlar las boletas de venta y post venta</a>
+</div>
+
+<div class="container">
+    <a class="button control-button" href="{% url 'facturas' %}">Controlar las Facturas</a>
+</div>
+
+
+
+
+{% endblock %}
