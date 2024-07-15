@@ -1,16 +1,63 @@
-.nose{
-  margin: 100px auto;
+.container-login {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
   max-width: 400px;
-  padding: 30px;
-  background-color: rgba(235, 231, 231, 0.2);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+  width: 100%;
+  margin: 0 auto; 
+}
 
-.tu{
-    background-color:rgba(42, 67, 211, 0.893); ;
-  }
+.container-login h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+}
 
-.ti{
-  background-color:rgba(181, 133, 50, 0.893); 
+.loginxd label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  text-align: left;
+  font-size: 14px;
+}
+
+.loginxd input[type="text"],
+.loginxd input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.loginxd button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginxd button:hover {
+  background-color: #0056b3;
+}
+
+.container-login ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  color: red;
+  font-size: 14px;
+}
+
+.container-login ul li {
+  margin-bottom: 10px;
 }

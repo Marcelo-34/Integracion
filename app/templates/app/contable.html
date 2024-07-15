@@ -12,8 +12,46 @@
 
 {% block contenido %}
 
-<div class="container">
-    <h1>Control de boletas para venta y pos venta</h1>
-</div>
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/contable.css'%}">
+
+<body>
+    <h1>Movimientos contables</h1>
+    <div>
+
+        {% load humanize %}
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="header-cell">Direccion de compra</th>
+                    <th class="header-cell">Estado</th>
+                    <th class="header-cell">Fecha de despacho</th>
+                    <th class="header-cell">ID</th>
+                    <th class="header-cell">ID compra</th>
+                    <th class="header-cell">Intento</th>
+                    <th class="header-cell">Patente</th>
+                    <th class="header-cell">Valor</th>
+                </tr>
+            </thead>
+            <tbody id="factura-tbody">
+                {% for d in despachos %}
+                <tr>
+                    <td>{{ d.direccion_compra }}</td>
+                    <td>{{ d.entregado }}</td>
+                    <td>{{ d.fecha_despacho }}</td>
+                    <td>{{ d.id }}</td>
+                    <td>{{ d.id_compra}}</td>
+                    <td>{{ d.intento }}</td>
+                    <td>{{ d.patente_camion }}</td>
+                    <td>${{ d.valor_compra| intcomma }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
 
 {% endblock %}
